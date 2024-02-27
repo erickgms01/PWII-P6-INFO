@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0; 
+}
+
+#container { 
+    border: 3px solid black;    
+    height: 400px;
+    width: 700px;
+    position: relative;
+    overflow: hidden;
+}
+
+.mario { 
+    position: absolute;
+    width: 100px;
+    bottom: 0;
+}
+
+.pipe { 
+    position: absolute;
+    width: 100px;
+    bottom: 0;
+    animation: pipeAnimation 3s infinite linear;
+}
+
+.clouds { 
+    position: absolute;
+    width: 250px;
+    margin-top: 25px;
+    animation: cloudAnimation 10s infinite linear;
+}
+
+@keyframes pipeAnimation {
+    from {
+        right: -100px;
+    
+    }
+    to { 
+        right: 700px;
+    }
+}
+
+@keyframes cloudAnimation {
+    from { 
+        right: -200px;
+    }
+    to{
+        right: 800px;
+    }
+     
+    0% {top: 25px}
+    15% {top: 35px}
+    30% {top: 25px}
+    45% {top: 35px}
+    60% {top: 25px}
+    75% {top: 35px}
+    90% {top: 25px}
+    100% {top: 35px}} 
+}
+
+@keyframes jumpAnimation {
+    0% {top: 0px}
+}
